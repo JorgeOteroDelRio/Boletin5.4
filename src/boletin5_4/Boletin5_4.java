@@ -16,8 +16,9 @@ public class Boletin5_4 {
      */
     public static void main(String[] args) {
         MateriaPrimaRestaurante restaurante = new MateriaPrimaRestaurante();
-        int polbos = Integer.parseInt(JOptionPane.showInputDialog("Introduzca a cantidade de polbos que hai no almacén:"));
-        int patacas = Integer.parseInt(JOptionPane.showInputDialog("Introduzca a cantidade de patacas que hai no almacén:"));
+        int polbos, patacas;
+        polbos = Integer.parseInt(JOptionPane.showInputDialog("Introduzca a cantidade de polbos que hai no almacén:"));
+        patacas = Integer.parseInt(JOptionPane.showInputDialog("Introduzca a cantidade de patacas que hai no almacén:"));
         restaurante.engadirPolbo(polbos);
         restaurante.engadirPatacas(patacas);
         JOptionPane.showMessageDialog(null, "A cantidade de clientes que poder comer hoxe no restaurante polbo e patacas son: " + restaurante.calcularClientes());

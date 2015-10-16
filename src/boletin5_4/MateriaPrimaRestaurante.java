@@ -32,15 +32,13 @@ public class MateriaPrimaRestaurante {
     }
     
     public int calcularClientes(){
-        double polboPorPersoa = (double)(polbo3Persoas / 3);
-        double patacasPorPersoa = patacas3Persoas / 3;
-        int polboClientes = (int)(polbo / polboPorPersoa);
-        int patacasClientes = (int)(patacas / patacasPorPersoa);
-        if (polboClientes <= patacasClientes){
-            return polboClientes;
+        int comensalesPolbo = 3 * polbo / 2;
+        int comensalesPatacas = 3 * patacas / 1;
+        if (comensalesPolbo <= comensalesPatacas){
+            return comensalesPolbo;
         }
         else{
-            return patacasClientes;
+            return comensalesPatacas;
         }
     }
     
