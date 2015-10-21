@@ -16,11 +16,11 @@ public class MateriaPrimaRestaurante {
     private final int patacas3Persoas = 1;
     
     public void engadirPolbo(int kilosPolbo){
-        polbo = kilosPolbo;
+        polbo += kilosPolbo;
     }
     
     public void engadirPatacas(int kilosPatacas){
-        patacas = kilosPatacas;
+        patacas += kilosPatacas;
     }
     
     public int amosarPolbo(){
